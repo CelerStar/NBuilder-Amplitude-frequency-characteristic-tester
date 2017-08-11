@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" type="text/css" href="vendor/bootmetro-0.9.0/content/css/bootmetro-icons.css">
+		<link rel="stylesheet" type="text/css" href="vendor/bootmetro-0.9.0/content/css/bootmetro.css">
+		<link rel="stylesheet" type="text/css" href="vendor/bootmetro-0.9.0/content/css/bootmetro-responsive.css">
+		<link rel="stylesheet" type="text/css" href="vendor/bootmetro-0.9.0/content/css/bootmetro-ui-light.css">
+		<link rel="stylesheet" type="text/css" href="vendor/bootmetro-0.9.0/content/css/datepicker.css">
+
+		<link rel="stylesheet" type="text/css" href="vendor/nbstrap/css/nbstrap.css" />
+
+	</head>
+
+	<body class="" style="padding: 0px;">
+
+		<div class="container-fluid nb-window" style="padding: 0;">
+
+			<div class="row-fluid nb-col">
+
+				<div class="span3 nb-col">
+
+					<div class="nb-col" style="padding: 10px;">
+
+						<div class="nb-row-xs-6">
+							<section id="wizard-step-content">
+								<h2>软件配置</h2>
+								<h3>网络配置</h3>
+
+							</section>
+
+							<div class="control-group">
+								<label class="control-label">服务器地址</label>
+								<div class="controls">
+									<input type="text" id="ip" value="127.0.0.1" style="width: 100%;">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">服务器端口</label>
+								<div class="controls ">
+									<input type="text" id="port" value="8080" style="width: 100%;">
+								</div>
+							</div>
+							<div class="control-group align-right">
+								<div class="controls align-right">
+
+									<button id="start" class="btn btn-primary">启动</button>
+								</div>
+							</div>
+						</div>
+						<div class="nb-row-xs-5">
+							<section id="wizard-step-content">
+
+								<h3>通讯协议</h3>
+
+								<div id="">
+									通讯方式：TCP
+								</div>
+
+								<div id="">
+									编码协议：JSON数组
+								</div>
+
+								<div id="" style="">
+									信息示例：[[1,10],[2,20],[3,56.4],[4,23.4],[5,56]]
+								</div>
+							</section>
+						</div>
+
+						<div class="nb-row-xs-1 nb-titlebar-btn">
+							<h6 id="nbuilder">Made By NBuilder</h6>
+						</div>
+					</div>
+
+				</div>
+				<div class="span9 nb-col">
+					<div class="nb-row-xs-2 row  align-center">
+						<h1>全国电赛远程幅频特性测试仪</h1>
+					</div>
+
+					<div class="nb-row-xs-9" style="padding-right: 20px;">
+						<div id="main" class="nb-row-xs-12" style=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript" src="vendor/bootmetro-0.9.0/scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="vendor/bootmetro-0.9.0/scripts/bootmetro-panorama.js"></script>
+	<script type="text/javascript" src="vendor/bootmetro-0.9.0/scripts/bootmetro-pivot.js"></script>
+	<script type="text/javascript" src="vendor/bootmetro-0.9.0/scripts/bootmetro-charms.js"></script>
+	<script type="text/javascript" src="vendor/bootmetro-0.9.0/scripts/bootstrap-datepicker.js"></script>
+
+	<script src="vendor/echarts/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/nbstrap/js/nbstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/nbtcpserver/nbtcpserver.js" type="text/javascript" charset="utf-8"></script>
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
