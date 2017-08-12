@@ -1,5 +1,5 @@
 /*!
- * NBuilder-Amplitude-frequency-characteristic-tester v1.0.0
+ * NBuilder-Amplitude-frequency-characteristic-tester v1.1.0
  * Copyright 2017-2018 NBuilder, Inc.
  * Licensed under MIT
  */
@@ -68,24 +68,28 @@ option = {
 			type: 'cross'
 		}
 	},
-	dataZoom: [{
-			show: true,
-			start: 0,
-			end: 100
-		},
-		{
-			type: 'inside',
-			start: 0,
-			end: 100
-		},
-		{
-			show: true,
-			yAxisIndex: 0,
-			filterMode: 'empty',
-			width: 30,
-			left: '93%'
-		}
-	],
+    dataZoom: [
+        {
+            type: 'slider',
+            xAxisIndex: 0,
+            filterMode: 'none'
+        },
+        {
+            type: 'slider',
+            yAxisIndex: 0,
+            filterMode: 'none'
+        },
+        {
+            type: 'inside',
+            xAxisIndex: 0,
+            filterMode: 'none'
+        },
+        {
+            type: 'inside',
+            yAxisIndex: 0,
+            filterMode: 'none'
+        }
+    ],
 	xAxis: {
 		type: 'value',
 		splitLine: {
@@ -97,6 +101,7 @@ option = {
 	},
 	yAxis: {
 		type: 'value',
+		boundaryGap: ['20%', '20%'],
 		splitLine: {
 			lineStyle: {
 				type: 'dashed'
